@@ -5,10 +5,9 @@ export class CreateProductDto {
     @IsString()
     public name: string;
 
-    @IsString()
-    public description: string;
 
     @IsNumber()
     @Type(() => Number)
-    public price: string;
+    public price: number;
+
 }
